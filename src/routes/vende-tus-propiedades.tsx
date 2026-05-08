@@ -160,6 +160,57 @@ function Hero() {
   );
 }
 
+function PainPoints() {
+  const pains = [
+    {
+      icon: XCircle,
+      title: "Basta de fotos por WhatsApp que nadie mira",
+      desc: "Tu propiedad merece más que un álbum perdido en un chat lleno de stickers.",
+    },
+    {
+      icon: AlertTriangle,
+      title: "Filtra a los preguntones y curiosos",
+      desc: "Solo te escriben compradores con intención real. Cero pérdida de tiempo.",
+    },
+    {
+      icon: DollarSign,
+      title: "Ahorra miles de dólares en comisiones",
+      desc: "Olvídate del 5% al agente. Vendés directo y el dinero se queda con vos.",
+    },
+  ];
+
+  return (
+    <section className="mx-auto max-w-7xl px-6 lg:px-10 py-24 lg:py-32">
+      <motion.div {...fadeUp} className="text-center max-w-2xl mx-auto">
+        <span className="text-xs uppercase tracking-[0.2em] text-destructive">
+          Donde más duele
+        </span>
+        <h2 className="mt-3 text-3xl sm:text-5xl font-semibold tracking-tight">
+          Vender una propiedad hoy{" "}
+          <span className="text-muted-foreground">no debería sentirse así.</span>
+        </h2>
+      </motion.div>
+
+      <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6">
+        {pains.map(({ icon: Icon, title, desc }, i) => (
+          <motion.div
+            key={title}
+            {...fadeUp}
+            transition={{ duration: 0.6, delay: i * 0.08 }}
+            className="group rounded-3xl border border-border/60 bg-card/50 p-8 hover:border-destructive/40 hover:-translate-y-1 transition-all"
+          >
+            <div className="h-12 w-12 rounded-2xl bg-destructive/10 text-destructive flex items-center justify-center group-hover:scale-110 transition-transform">
+              <Icon className="h-6 w-6" />
+            </div>
+            <h3 className="mt-6 text-lg font-semibold">{title}</h3>
+            <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{desc}</p>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function Comparison() {
   const before = [
     "Mezclado con miles de casas baratas",
