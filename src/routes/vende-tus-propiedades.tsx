@@ -600,7 +600,9 @@ function Pricing() {
                 ))}
               </ul>
               <a
-                href="#contacto"
+                href={waLink(`Hola Sacuanjoche.dev, me interesa el ${p.name}. ¿Cómo iniciamos?`)}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`mt-10 inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold transition-all hover:scale-[1.02] ${
                   p.featured
                     ? "text-primary-foreground shadow-[var(--shadow-gold)]"
@@ -722,11 +724,13 @@ function Footer() {
               “Las personas no compran propiedades, compran decisiones bien presentadas.”
             </p>
             <a
-              href="https://wa.me/50500000000"
+              href={waLink("Hola Sacuanjoche.dev, quiero hablar sobre mi propiedad.")}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-6 inline-flex items-center gap-2 rounded-full border border-[var(--brand-emerald)]/40 px-5 py-2.5 text-sm hover:bg-[var(--brand-emerald)]/10 transition-all"
             >
               <MessageCircle className="h-4 w-4 text-[var(--brand-emerald)]" />
-              Hablemos por WhatsApp
+              Hablemos por WhatsApp · {WHATSAPP_DISPLAY}
             </a>
           </div>
         </div>
