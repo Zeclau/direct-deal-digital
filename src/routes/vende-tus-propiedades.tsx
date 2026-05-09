@@ -27,6 +27,11 @@ import {
 import { useState } from "react";
 import logoSacuanjoche from "@/assets/logo-sacuanjoche.png";
 
+const WHATSAPP_NUMBER = "50576514498";
+const WHATSAPP_DISPLAY = "+505 7651 4498";
+const waLink = (msg: string) =>
+  `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+
 export const Route = createFileRoute("/vende-tus-propiedades")({
   head: () => ({
     meta: [
@@ -130,7 +135,13 @@ function Hero() {
             <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
           </a>
           <a
-            href="https://wa.me/50500000000"
+            href={waLink("Hola Sacuanjoche.dev, quiero información para vender mi propiedad.")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 rounded-full border border-border/70 bg-card/40 px-7 py-4 text-base font-medium hover:bg-card/70 hover:border-[var(--brand-emerald)] transition-all"
+          >
+            <MessageCircle className="h-5 w-5 text-[var(--brand-emerald)]" />
+            Contactar por WhatsApp
             className="inline-flex items-center gap-2 rounded-full border border-[var(--brand-emerald)]/40 bg-card/40 px-7 py-3.5 text-sm font-semibold hover:bg-[var(--brand-emerald)]/10 hover:border-[var(--brand-emerald)] transition-all"
           >
             <MessageCircle className="h-4 w-4 text-[var(--brand-emerald)]" />
