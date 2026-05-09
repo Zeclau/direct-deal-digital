@@ -121,7 +121,7 @@ function Hero() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="mt-6 mx-auto max-w-2xl text-center text-base sm:text-lg text-muted-foreground"
         >
-          Tu casa o local no solo estará en Facebook. Digitaliza tu propiedad con un portal web de
+          Tus propiedades no solo estarán en Facebook. Digitaliza tu propiedad con un portal web de
           lujo y atrae compradores reales, no mirones.
         </motion.p>
 
