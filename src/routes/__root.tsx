@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Sacuanjoche Vende tus propiedades con tecnología automática" },
+      { name: "description", content: "Sacuanjoche te ayuda a vender tus propiedades sin comisiones por medio de tecnología automatizada." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Sacuanjoche Vende tus propiedades con tecnología automática" },
+      { property: "og:description", content: "Sacuanjoche te ayuda a vender tus propiedades sin comisiones por medio de tecnología automatizada." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Sacuanjoche Vende tus propiedades con tecnología automática" },
+      { name: "twitter:description", content: "Sacuanjoche te ayuda a vender tus propiedades sin comisiones por medio de tecnología automatizada." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/5235a586-fbf5-4c9f-b75c-86c7b89c6ba9" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/5235a586-fbf5-4c9f-b75c-86c7b89c6ba9" },
     ],
     links: [
       {
